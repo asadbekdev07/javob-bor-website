@@ -289,6 +289,87 @@ a {
   opacity: 0.6;
 }
 
+/* MAIN-CONTENT  */
+.main-content__container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* Container for the post */
+.post-container__wrapper {
+  display: flex;
+}
+
+.post-container {
+  max-width: 500px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Header of the post */
+.post-header {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.post-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post-header h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Content of the post */
+.post-content {
+  padding: 10px;
+}
+
+.post-content img {
+  max-width: 80%;
+  height: 500px;
+  margin-bottom: 10px;
+}
+
+.post-content p {
+  margin-bottom: 10px;
+}
+
+/* Footer of the post */
+.post-footer {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ccc;
+}
+
+.post-footer .icons {
+  display: flex;
+  align-items: center;
+}
+
+.post-footer .icons i {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
 
 /* MODAL  */
 .modal {
