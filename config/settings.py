@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # local
-    'main'
+    'main',
+    'account',
 ]
 
 MIDDLEWARE = [
@@ -53,6 +54,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'config.urls'
+
+AUTH_USER_MODEL = 'account.Account'
 
 TEMPLATES = [
     {
@@ -108,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Tashkent'
 
 USE_I18N = True
 

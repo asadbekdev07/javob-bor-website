@@ -1,5 +1,13 @@
 from django.shortcuts import render
+from main.models import Science, Question
 
 
 def index(request):
-    return render(request, 'index.html')
+    sciences = Science.objects.all()
+    questions = Question.objects.order_by('-id')
+    ctx = {
+        'sciences': sciences,
+        'questions': questions,
+    }
+    return render(request, 'index.html', ctx)
+
